@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Happy Birthday Nisa 🎂</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet"> <!-- Caitlin alternative -->
+  <link href="https://fonts.googleapis.com/css2?family=Pompiere&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background-color: #4b0c23; /* burgundy */
+      color: #fff;
+    }
+    .caitlin {
+      font-family: 'Great Vibes', cursive;
+      font-size: 2.5rem;
+      color: #f9e6e6;
+      text-align: center;
+      margin-top: 2rem;
+    }
+    .hero {
+      position: relative;
+      text-align: center;
+    }
+    .cover {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+    .judul {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 3rem;
+      font-family: 'Great Vibes', cursive;
+      color: #fff;
+      background-color: rgba(0, 0, 0, 0.5);
+      padding: 1rem 2rem;
+      border-radius: 12px;
+    }
+    .floating-nav {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      background-color: rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(10px);
+      display: flex;
+      justify-content: center;
+      z-index: 999;
+      padding: 7px;
+    }
+    .floating-nav ul {
+      list-style: none;
+      display: flex;
+      padding: 0;
+      margin: 0;
+    }
+    .floating-nav li {
+      margin: 0 1rem;
+    }
+    .floating-nav a {
+      text-decoration: none;
+      color: #ffd6d6;
+      font-weight: bold;
+    }
+    section {
+      padding: 2rem;
+      text-align: center;
+    }
+
+    .teks-ucapan {
+        font-family: 'Pompiere', cursive;
+        font-size: 1.5rem;
+        color: #ffecec;
+    }
+
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      justify-content: center;
+    }
+    .gallery img {
+      width: 200px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.5);
+      transition: transform 0.3s;
+    }
+    .gallery img:hover {
+      transform: scale(1.05);
+    }
+    .gallery-scroll {
+        display: flex;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        flex-wrap: nowrap;
+        gap: 1rem;
+        padding: 1rem;
+    }
+    .gallery-scroll img {
+        flex: 0 0 auto;
+        height: 300px;
+        width: auto;
+        object-fit: cover;
+        border-radius: 10px;
+        scroll-snap-align: center;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    }
+
+    textarea {
+      width: 80%;
+      height: 150px;
+      padding: 1rem;
+      border-radius: 10px;
+      border: none;
+      margin-top: 1rem;
+    }
+    button {
+      margin-top: 1rem;
+      padding: 0.5rem 1rem;
+      border: none;
+      border-radius: 5px;
+      background-color: #ffbaba;
+      color: #4b0c23;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    .fade-section {
+      opacity: 0;
+      transform: translateY(30px);
+      transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+    }
+    .fade-section.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  </style>
+</head>
+<body>
+  <header class="hero">
+    <img src="img/anis.jpg" alt="Foto Nisa dan kamu" class="cover" />
+    <h1 class="judul">Happy Birthday Nisa!</h1>
+  </header>
+
+  <nav class="floating-nav">
+    <ul>
+      <li><a href="#tentang">Tentang</a></li>
+      <li><a href="#galeri">Galeri</a></li>
+      <li><a href="#ucapan">Ucapan</a></li>
+      <li><a href="#doa">Doa</a></li>
+      <li><a href="#catatan">Note</a></li>
+    </ul>
+  </nav>
+
+  <section id="tentang" class="fade-section">
+    <h2 class="caitlin">Tentang Nisa</h2>
+    <p class="teks-ucapan">Dia bukan sekedar manusia<br><br>Dia bisa menyamar jadi Anis, Salma, kadang ada title "adek"-nya juga. Dia bisa jadi sayuran, sebut saja Slobor Slebew. Dia bisa jadi perkakas, kalian akan mengenalnya sebagai Palugada. Kadang kalau lagi baik suka nyamar jadi Ibu peri. (katanya sih, gue belum pernah liat juga)...<br>Cancer, ISFP, Nastar, Sayap Naga, Gryffindor, Cucu pertama, Anak pertama, ciri-ciri penerus tahta pokoknya.</p>
+  </section>
+
+  <section id="galeri" class="fade-section">
+    <h2 class="caitlin">Galeri</h2>
+    <div class="gallery gallery-scroll">
+      <img src="img/dongker.jpg" alt="foto 1" />
+      <img src="img/kayyis.jpg" alt="foto 2" />
+      <img src="img/loteng.jpg" alt="foto 3" />
+      <img src="img/pasarmalem.jpg" alt="foto 3" />
+    </div>
+  </section>
+
+  <section id="ucapan" class="fade-section">
+    <h2 class="caitlin">Ucapan Buat Nisa</h2>
+    <p class="teks-ucapan">Ini cuma akal-akalan gue aja buat bikin kado yang beda dan nggak makan budget banyak. Intinya sebenernya gue bikin ini tuh buat nyelamatin dompet gue, jadi jangan baper.<br><br>Anyway, Happy Birthday! Selamat berkepala ganda, makasih udah bikin hidup gue asem-asem sepet. Dan Jangan di Judge, gue baru belajar aja bikin kek ginian.<br><br>Okay, itu aja sih, Selamat menjalani masa dewasa!</p>
+  </section>
+
+  <section id="doa" class="fade-section">
+    <h2 class="caitlin">Doa Buat Nisa</h2>
+    <p class="teks-ucapan">Semoga cepet nikah!!!!<br>Tapi sama orang yang tepat...<br><br>Semoga dietnya kali ini berhasil, semoga rejekinya lapang selapang pantat kita kalo dijadiin satu, semoga sembuh dari gangguan psikologismu, moga dapet jodoh ganteng, kaya raya, soleh, dan penyayang.(Gue juga Ya Allah...)<br><br>Yang terakhir, semoga apa yang lu tulis di note dibawah ini tersampaikan pada Allah. Aamiin...</p>
+  </section>
+
+  <section id="catatan" class="fade-section">
+    <h2 class="caitlin">Catatan dari Nisa</h2>
+    <textarea id="noteInput" placeholder="Tulis sesuatu, Nisa..."></textarea>
+    <br>
+    <button onclick="saveNote()">Sampaikan Pada Allah</button>
+    <p id="savedNote"></p>
+  </section>
+
+  <script>
+    function saveNote() {
+      const input = document.getElementById("noteInput").value;
+      localStorage.setItem("nisa_note", input);
+      document.getElementById("savedNote").innerText = "Aamiin...!!!";
+    }
+
+    // Animasi scroll masuk
+    const faders = document.querySelectorAll('.fade-section');
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, { threshold: 0.2 });
+
+    faders.forEach(section => {
+      observer.observe(section);
+    });
+
+    // Load saved note
+    window.onload = () => {
+      const saved = localStorage.getItem("nisa_note");
+      if (saved) {
+        document.getElementById("noteInput").value = saved;
+      }
+    };
+  </script>
+</body>
+</html>
