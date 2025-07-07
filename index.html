@@ -9,6 +9,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet"> <!-- Caitlin alternative -->
   <link href="https://fonts.googleapis.com/css2?family=Pompiere&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
   <style>
     body {
       margin: 0;
@@ -54,21 +55,38 @@
       display: flex;
       justify-content: center;
       z-index: 999;
-      padding: 7px;
+      padding: 4px;
+      box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.4);
     }
     .floating-nav ul {
       list-style: none;
       display: flex;
-      padding: 0;
+      padding: 0.5rem 1rem;
       margin: 0;
+      gap: 1.5rem;
     }
     .floating-nav li {
+      text-align: center;
       margin: 0 1rem;
     }
     .floating-nav a {
       text-decoration: none;
       color: #ffd6d6;
-      font-weight: bold;
+      font-size: 1.4rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      transition: transform 0.2s ease;
+    }
+
+    .floating-nav a:hover {
+      transform: scale(1.2);
+    }
+
+    .floating-nav a span {
+      font-size: 0.7rem;
+      margin-top: 0.2rem;
+      font-family: "Pompiere", cursive;
     }
     section {
       padding: 2rem;
@@ -98,16 +116,19 @@
     }
     .gallery-scroll {
         display: flex;
+        flex-direction: row;
         overflow-x: auto;
+        overflow-y: hidden;
         scroll-snap-type: x mandatory;
         -webkit-overflow-scrolling: touch;
         gap: 1rem;
         padding: 1rem;
         max-width: 100%;
+        box-sizing: border-box;
     }
     .gallery-scroll img {
         flex: 0 0 auto;
-        height: 300px;
+        height: 250px;
         width: auto;
         scroll-snap-align: center;
         object-fit: cover;
@@ -152,14 +173,15 @@
   </header>
 
   <nav class="floating-nav">
-    <ul>
-      <li><a href="#tentang">Tentang</a></li>
-      <li><a href="#galeri">Galeri</a></li>
-      <li><a href="#ucapan">Ucapan</a></li>
-      <li><a href="#doa">Doa</a></li>
-      <li><a href="#catatan">Note</a></li>
-    </ul>
-  </nav>
+  <ul>
+    <li><a href="#tentang"><i class="fas fa-user-astronaut"></i><span>Tentang</span></a></li>
+    <li><a href="#galeri"><i class="fas fa-camera-retro"></i><span>Galeri</span></a></li>
+    <li><a href="#ucapan"><i class="fas fa-comment-dots"></i><span>Ucapan</span></a></li>
+    <li><a href="#doa"><i class="fas fa-hands-praying"></i><span>Doa</span></a></li>
+    <li><a href="#catatan"><i class="fas fa-book-heart"></i><span>Note</span></a></li>
+  </ul>
+</nav>
+
 
   <section id="tentang" class="fade-section">
     <h2 class="caitlin">Tentang Nisa</h2>
@@ -169,16 +191,27 @@
   <section id="galeri" class="fade-section">
     <h2 class="caitlin">Galeri</h2>
     <div class="gallery gallery-scroll">
-      <img src="img/dongker.jpg" alt="foto 1" />
-      <img src="img/kayyis.jpg" alt="foto 2" />
-      <img src="img/loteng.jpg" alt="foto 3" />
-      <img src="img/pasarmalem.jpg" alt="foto 3" />
+      <img src="img/ss1.jpg" alt="foto 1" />
+      <img src="img/ss2.jpg" alt="foto 2" />
+      <img src="img/cimet.jpg" alt="foto 4" />
+      <img src="img/honda.jpg" alt="foto 5" />
+      <img src="img/dongker.jpg" alt="foto 6" />
+      <img src="img/kayyis.jpg" alt="foto 7" />
+      <img src="img/loteng.jpg" alt="foto 8" />
+      <img src="img/pasarmalem.jpg" alt="foto 9" />
+      <img src="img/kayyis2.jpg" alt="foto 10" />
+      <img src="img/lope.jpg" alt="foto 11" />
+      <img src="img/mirror.jpg" alt="foto 12" />
+      <img src="img/pra.jpg" alt="foto 13" />
+      <img src="img/semarang.jpg" alt="foto 14" />
+      <img src="img/vlog.jpg" alt="foto 15" />
+      <img src="img/wisuda.jpg" alt="foto 16" />
     </div>
   </section>
 
   <section id="ucapan" class="fade-section">
     <h2 class="caitlin">Ucapan Buat Nisa</h2>
-    <p class="teks-ucapan">Ini cuma akal-akalan gue aja buat bikin kado yang beda dan nggak makan budget banyak. Intinya sebenernya gue bikin ini tuh buat nyelamatin dompet gue, jadi jangan baper.<br><br>Anyway, Happy Birthday! Selamat berkepala ganda, makasih udah bikin hidup gue asem-asem sepet. Dan Jangan di Judge, gue baru belajar aja bikin kek ginian.<br><br>Okay, itu aja sih, Selamat menjalani masa dewasa!</p>
+    <p class="teks-ucapan">Ini cuma akal-akalan gue aja buat bikin kado yang beda dan nggak makan budget banyak. Intinya sebenernya gue bikin ini tuh buat nyelamatin dompet gue, jadi jangan baper.<br><br>Anyway, Happy Birthday! Selamat berkepala ganda, makasih udah bikin hidup gue asem-asem sepet, makasih udah gue repotin seumur hidup gue di PPAQ, udah ikut jadi babysitter Kayyis, udah jadi pendengar yang baik, pokoknya makasih.<br>Jangan nangis!<br>Dan Jangan di Judge, gue baru belajar aja bikin kek ginian.<br><br>Okay, itu aja sih, Selamat menjalani masa dewasa!</p>
   </section>
 
   <section id="doa" class="fade-section">
