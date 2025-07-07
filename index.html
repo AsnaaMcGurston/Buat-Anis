@@ -100,18 +100,20 @@
         display: flex;
         overflow-x: auto;
         scroll-snap-type: x mandatory;
-        flex-wrap: nowrap;
+        -webkit-overflow-scrolling: touch;
         gap: 1rem;
         padding: 1rem;
+        max-width: 100%;
     }
     .gallery-scroll img {
         flex: 0 0 auto;
         height: 300px;
         width: auto;
+        scroll-snap-align: center;
         object-fit: cover;
         border-radius: 10px;
         scroll-snap-align: center;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
     }
 
     textarea {
