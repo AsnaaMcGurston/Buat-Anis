@@ -125,11 +125,13 @@
         padding: 1rem;
         max-width: 100%;
         box-sizing: border-box;
+        scroll-behavior: smooth;
     }
     .gallery-scroll img {
         flex: 0 0 auto;
+        flex-shrink: 0;
         height: 250px;
-        width: auto;
+        width: 150px;
         scroll-snap-align: center;
         object-fit: cover;
         border-radius: 10px;
